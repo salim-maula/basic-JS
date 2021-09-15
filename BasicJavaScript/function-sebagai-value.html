@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function sebagai Value</title>
+</head>
+<body>
+<script>
+
+    function sayHello(name){
+        document.writeln(`<p>Hello ${name}</p>`);
+    }
+
+    //untuk memangil function say helloo kita bisa langsung inisialisasi saja
+    //atau bisa juga membuatnya dalam variable terlebih dahulu
+
+    sayHello("salim");
+
+    const say = sayHello;
+
+    say("Budi");
+
+    //kita bisa membuat function sebagai value, parameter dan lain2
+    function giveMeName(callback){
+        callback("salim"); // sayHello("salim");
+    }
+
+    giveMeName(sayHello)
+    giveMeName(say); // giveMeName(sayHello)
+
+</script>
+</body>
+</html>

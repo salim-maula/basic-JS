@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Ternary</title>
+</head>
+<body>
+<script>
+
+    const nilai = 90;
+    let ucapan;
+
+    //menggunakan operasi ternery membuat kita lebih simple ketimbang menggunakan if else
+    // if (nilai >= 75) {
+    //     ucapan = "Selamat Anda Lulus";
+    // } else {
+    //     ucapan = "Silahkan Coba Lagi";
+    // }
+    // document.writeln(`<p>${ucapan}</p>`);
+
+    //with ternery
+    ucapan = nilai >= 75 ? "Selamat Anda Lulus" : "Silahkan Coba Lagi";
+
+    document.writeln(`<p>${ucapan}</p>`);
+
+</script>
+</body>
+</html>

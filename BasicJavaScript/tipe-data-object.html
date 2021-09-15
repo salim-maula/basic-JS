@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const orang = {
+        "nama lengkap" : "salim maula",
+        alamat: "Indonesia",
+        umur: 30
+    };
+
+    // ubah property / attribute
+    // person["nama"] = "salim maula";
+    // person["alamat"] = "Indonesia";
+    // person["umur"] = 30;
+
+    console.info(`Namaa : ${orang["nama lengkap"]}`);
+    console.info(`Alamat : ${orang.alamat}`);
+    console.info(`Umur : ${orang.umur}`);
+
+    console.table(orang);
+
+    delete orang["umur"];
+
+    console.table(orang);
+    </script>
+</body>
+</html>

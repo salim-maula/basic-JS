@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Optional Chaining</title>
+</head>
+<body>
+<script>
+
+    const person = {
+    };
+
+    //1. ketika code dibawah dijalankan dia akan error
+    //let country = person.address.country;
+
+    //2. code bisa berjalan tapi penulisan code sangat panjang
+    //kita harus melakukan pengecekan terlebih dahulu
+    // if(person.address !== undefined && person.address !== null){
+    //     country = person.address.country;
+    // }
+
+    //3. optional chaining bisa menjadi jawabannya
+    //let country = person?.address?.country;
+    // agar tidak undefined kita bisa menambahkan code dibawah ini
+    // address: {
+    //         country : "Indonesia"
+    //     }
+
+
+    document.writeln(`SUKSES`);
+
+    document.writeln(`<p>${country}</p>`);
+
+    document.writeln(`SUKSES`);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>With Statement</title>
+</head>
+<body>
+<script>
+
+    const person = {
+        firstName: "salim",
+        middleName: "maula",
+        lastName: "hudzaifah"
+    };
+    
+    //tanpa menggunakan with, kita harus menulisnya satu persatu
+    console.info(person.firstName);
+    console.info(person.middleName);
+    console.info(person.lastName);
+
+    const firstName = "Budi";
+    const lastName = "Nugraha";
+
+    // with statement memenaglah ada, tapi pda versi baru with jarang sekali digunakan,karna membuatnya 
+    //menjadi ambigu
+    //kita tidak bisa mengakses variable firstName yang ada di atas const firstName = "Budi";
+    with (person) {
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+    }
+
+</script>
+</body>
+</html>
